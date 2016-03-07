@@ -11,10 +11,13 @@ public class PlayerLocomotion : MonoBehaviour
 	[SerializeField]
 	private Animator anim;
 	public Quaternion newrotation;
-	public float smooth = 0.1f;
-	public Transform playerCamera;
+	[SerializeField]
+	private float smooth = 0.1f;
+	[SerializeField]
+	private Transform playerCamera;
 	private Vector3 movementVector;
-	private CharacterController characterController;
+	[SerializeField]
+	private CharacterController myCharacterController;
 
 	//[SerializeField]
 	//private Rigidbody myRigidbody;
@@ -36,17 +39,18 @@ public class PlayerLocomotion : MonoBehaviour
 		
 		float mg = new Vector3(v, h, 0).magnitude;
 		
-		
+
 		movement(v, h, mg);
-		
+		rotate(v, h);
 	}
+
 	void OnAnimatorMove()
 	{
 		Vector3 velocity = anim.deltaPosition / Time.deltaTime;
 		//velocity.y = myRigidbody.velocity.y;
 		//myRigidbody.velocity = velocity;       
 	}
-	
+	/*
 	void FixedUpdate()
 	{
 		float vertical = Input.GetAxis("Left Stick Y Axis");
@@ -55,7 +59,7 @@ public class PlayerLocomotion : MonoBehaviour
 		//rotate(vertical, horizontal);
 		
 		
-	}
+	}*/
 	void movement(float v, float h, float mg)
 	{
 		
@@ -73,7 +77,7 @@ public class PlayerLocomotion : MonoBehaviour
 			//Stop the player if user is not pressing any key
 		}
 	}
-	/*
+
 	void rotate(float v, float h)
 	{
 		if (v > 0)
@@ -118,18 +122,18 @@ public class PlayerLocomotion : MonoBehaviour
 			}
 			else
 			{
-				//newrotation = myRigidbody.rotation;
+				newrotation = myCharacterController.transform.rotation;//myRigidbody.rotation;
 			}
 		}
 		newrotation.x = 0;
 		newrotation.z = 0;
 		
 		//We only want player to rotate in y axis 
-		//myRigidbody.rotation = Quaternion.Slerp(myRigidbody.rotation, newrotation, smooth);
+		myCharacterController.transform.rotation = Quaternion.Slerp(myCharacterController.transform.rotation, newrotation, smooth);
 		//Slerp from player's current rotation to the new intended rotaion smoothly
 		
 	}
-	*/
+
 	void calcSpeed()
 	{
 		//speed = distance/time
