@@ -30,7 +30,7 @@ public class PlayerLocomotion : MonoBehaviour
 	private float slowMg;
 	
 
-	void Update()
+	void FixedUpdate()
 	{
 		
 		//Debug.Log(arealState);
