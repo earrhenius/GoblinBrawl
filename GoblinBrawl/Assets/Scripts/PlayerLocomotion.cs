@@ -24,6 +24,11 @@ public class PlayerLocomotion : MonoBehaviour
 	//private float jumpPower = 15;
 	//private bool temp = false;
 
+	private float nextActionTime = 0.0f;
+	private float period = 0.1f;
+
+	private float slowMg;
+	
 
 	void Update()
 	{
@@ -36,11 +41,14 @@ public class PlayerLocomotion : MonoBehaviour
 		//float rightTrigger = Input.GetAxis("RightTrigger");
 		//bool bButton = Input.GetButton("B");
 		//bool aButton = Input.GetButton("A");
-		
+
+
+	
+
 		float mg = new Vector3(v, h, 0).magnitude;
 		
 
-		movement(v, h, mg);
+		movement(v, h, mg , slowMg);
 		rotate(v, h);
 	}
 
@@ -60,7 +68,7 @@ public class PlayerLocomotion : MonoBehaviour
 		
 		
 	}*/
-	void movement(float v, float h, float mg)
+	void movement(float v, float h, float mg, float slowMg)
 	{
 		
 		if (h != 0f || v != 0f)
@@ -73,7 +81,7 @@ public class PlayerLocomotion : MonoBehaviour
 		}
 		else
 		{
-			anim.SetFloat("movementSpeed", 0);
+			anim.SetFloat("movementSpeed",0);
 			//Stop the player if user is not pressing any key
 		}
 	}
