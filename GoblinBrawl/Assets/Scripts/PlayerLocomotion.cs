@@ -30,7 +30,7 @@ public class PlayerLocomotion : MonoBehaviour
 	private float slowMg;
 	
 
-	void FixedUpdate()
+	void Update()
 	{
 		
 		//Debug.Log(arealState);
@@ -47,9 +47,12 @@ public class PlayerLocomotion : MonoBehaviour
 
 		float mg = new Vector3(v, h, 0).magnitude;
 		
+		slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
+
+		print(slowMg);
 
 		movement(v, h, mg , slowMg);
-		rotate(v, h);
+		//rotate(v, h);
 	}
 
 	void OnAnimatorMove()
@@ -58,19 +61,19 @@ public class PlayerLocomotion : MonoBehaviour
 		//velocity.y = myRigidbody.velocity.y;
 		//myRigidbody.velocity = velocity;       
 	}
-	/*
+
 	void FixedUpdate()
 	{
 		float vertical = Input.GetAxis("Left Stick Y Axis");
 		float horizontal = Input.GetAxis("Left Stick X Axis");
 		
-		//rotate(vertical, horizontal);
+		rotate(vertical, horizontal);
 		
 		
-	}*/
+	}
 	void movement(float v, float h, float mg, float slowMg)
 	{
-		
+
 		if (h != 0f || v != 0f)
 		{
 
@@ -81,7 +84,8 @@ public class PlayerLocomotion : MonoBehaviour
 		}
 		else
 		{
-			anim.SetFloat("movementSpeed",0);
+
+			anim.SetFloat("movementSpeed",slowMg);
 			//Stop the player if user is not pressing any key
 		}
 	}
