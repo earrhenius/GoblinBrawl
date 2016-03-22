@@ -39,11 +39,17 @@ public class AlertState : IEnemyState
 		enemy.currentState = enemy.chaseState;
 		searchTimer = 0f;
 	}
-	
+	public void ToAttackState()
+	{
+		
+	}
+
 	private void Look()
 	{
 		RaycastHit hit;
-		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, enemy.sightRange) && hit.collider.CompareTag ("Player")) {
+		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, enemy.sightRange) && hit.collider.CompareTag ("Player"))
+		{
+			Debug.DrawLine (enemy.eyes.transform.position, hit.transform.position, Color.cyan);
 			enemy.chaseTarget = hit.transform;
 			ToChaseState();
 		}

@@ -38,7 +38,11 @@ public class PatrolState : IEnemyState
 	{
 		enemy.currentState = enemy.chaseState;
 	}
-	
+	public void ToAttackState()
+	{
+		
+	}
+
 	private void Look()
 	{
 		RaycastHit hit;

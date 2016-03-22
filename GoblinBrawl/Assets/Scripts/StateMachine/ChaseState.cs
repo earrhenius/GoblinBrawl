@@ -38,14 +38,19 @@ public class ChaseState : IEnemyState
 	{
 		
 	}
-	
+
+	public void ToAttackState()
+	{
+		
+	}
+
 	private void Look()
 	{
 		RaycastHit hit;
 		Vector3 enemyToTarget = (enemy.chaseTarget.position + enemy.offset) - enemy.eyes.transform.position;
 		if (Physics.Raycast (enemy.eyes.transform.position, enemyToTarget, out hit, enemy.sightRange) && hit.collider.CompareTag ("Player")) {
 			enemy.chaseTarget = hit.transform;
-			
+			Debug.DrawLine (enemy.eyes.transform.position, hit.transform.position, Color.red);
 		}
 		else
 		{

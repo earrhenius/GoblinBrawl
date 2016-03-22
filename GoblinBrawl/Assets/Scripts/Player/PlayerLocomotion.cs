@@ -23,12 +23,15 @@ public class PlayerLocomotion : MonoBehaviour
 	//private Rigidbody myRigidbody;
 	//private float jumpPower = 15;
 	//private bool temp = false;
-
+	private float health;
 	//private float nextActionTime = 0.0f;
 	//private float period = 0.1f;
 
 	private float slowMg;
-	
+	void Awake()
+	{
+		health = gameObject.GetComponent<PlayerHealth>().playerHealth;
+	}
 
 	void Update()
 	{
@@ -49,7 +52,7 @@ public class PlayerLocomotion : MonoBehaviour
 		
 		slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
 
-		print(slowMg);
+		//print(slowMg);
 
 		movement(v, h, mg , slowMg);
 		//rotate(v, h);
