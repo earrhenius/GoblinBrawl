@@ -74,11 +74,11 @@ public class AttackState : IEnemyState
 			attackTimer = 0f;
 			
 			// If the player has health to lose...
-			if(playerHealth.currentHealth > 0)
-			{
+			//if(playerHealth.currentHealth > 0)
+			//{
 				// ... damage the player.
-				playerHealth.TakeDamage (attackDamage);
-			}
+			//	playerHealth.TakeDamage (attackDamage);
+			//}
 		}
 
 	}
