@@ -20,7 +20,7 @@ public class AttackState : IEnemyState
 	
 	public void OnTriggerEnter (Collider other)
 	{
-		
+
 	}
 	
 	public void ToPatrolState()
@@ -31,7 +31,7 @@ public class AttackState : IEnemyState
 	
 	public void ToAlertState()
 	{
-		Debug.Log ("Can't transition to same state");
+		//Debug.Log ("Can't transition to same state");
 	}
 	
 	public void ToChaseState()
@@ -48,6 +48,7 @@ public class AttackState : IEnemyState
 
 	private void Look()
 	{
+		enemy.navMeshAgent.Stop ();
 		RaycastHit hit;
 		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, 0.1f) && hit.collider.CompareTag ("Player"))
 		{
@@ -72,7 +73,8 @@ public class AttackState : IEnemyState
 		if(attackTimer >= enemy.attackRate && enemy.currentHealth > 0)
 		{
 			attackTimer = 0f;
-			
+
+			Debug.Log ("attack");
 			// If the player has health to lose...
 			//if(playerHealth.currentHealth > 0)
 			//{

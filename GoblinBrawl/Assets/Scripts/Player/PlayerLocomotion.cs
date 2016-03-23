@@ -30,7 +30,7 @@ public class PlayerLocomotion : MonoBehaviour
 	private float slowMg;
 	void Awake()
 	{
-		health = gameObject.GetComponent<PlayerHealth>().playerHealth;
+		health = gameObject.GetComponent<PlayerHealth>().playerHealthValue;
 	}
 
 	void Update()

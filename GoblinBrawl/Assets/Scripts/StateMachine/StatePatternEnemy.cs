@@ -13,7 +13,8 @@ public class StatePatternEnemy : MonoBehaviour
 	public Vector3 offset = new Vector3 (0,.5f,0);
 	public MeshRenderer meshRendererFlag;
 	
-	
+	private MeshCollider damageHitBox;
+
 	[HideInInspector] public Transform chaseTarget;
 	[HideInInspector] public IEnemyState currentState;
 	[HideInInspector] public ChaseState chaseState;

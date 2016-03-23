@@ -1,24 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 
 
-	public int playerHealth =100;
+	public int playerHealthValue =100;
 	// Use this for initialization
 	[SerializeField]
-	private GUIText HealthValue;
+	private Text HealthValue;
 
-	void Start ()
+	void Awake ()
 	{
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
 	
-		HealthValue.text = playerHealth.ToString();
+		HealthValue.text = playerHealthValue.ToString();
 	}
 
 	public void TakeDamage (int amount)

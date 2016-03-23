@@ -124,6 +124,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &109528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 407190}
+  - 136: {fileID: 13616966}
+  m_Layer: 0
+  m_Name: DamageHitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &109948
 GameObject:
   m_ObjectHideFlags: 1
@@ -663,6 +679,22 @@ GameObject:
   - 4: {fileID: 460150}
   m_Layer: 0
   m_Name: EthanRightArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &152460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 490928}
+  - 136: {fileID: 13632064}
+  m_Layer: 0
+  m_Name: AttackRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1448,6 +1480,18 @@ Transform:
   - {fileID: 404294}
   m_Father: {fileID: 414034}
   m_RootOrder: 0
+--- !u!4 &407190
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109528}
+  m_LocalRotation: {x: .680883229, y: 8.67761418e-10, z: 1.33300121e-10, w: .732392013}
+  m_LocalPosition: {x: -0, y: .540000021, z: .537999988}
+  m_LocalScale: {x: .162771508, y: 1.18438017, z: .162771583}
+  m_Children: []
+  m_Father: {fileID: 466110}
+  m_RootOrder: 3
 --- !u!4 &407646
 Transform:
   m_ObjectHideFlags: 1
@@ -2005,6 +2049,8 @@ Transform:
   - {fileID: 498446}
   - {fileID: 491428}
   - {fileID: 433302}
+  - {fileID: 407190}
+  - {fileID: 490928}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &466586
@@ -2327,6 +2373,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 411836}
   m_RootOrder: 0
+--- !u!4 &490928
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .42899999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 466110}
+  m_RootOrder: 4
 --- !u!4 &491360
 Transform:
   m_ObjectHideFlags: 1
@@ -2525,7 +2583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   searchingTurnSpeed: 120
   searchingDuration: 4
-  sightRange: 20
+  attackRate: 10
+  sightRange: 7
+  currentHealth: 20
   wayPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -2552,6 +2612,32 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2.18000007
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &13616966
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &13632064
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: .540000021
+  m_Height: 1
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &13702532
 SkinnedMeshRenderer:
@@ -2713,7 +2799,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 100792}
   m_Enabled: 1
   m_Radius: .370000005
-  m_Speed: 1.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
