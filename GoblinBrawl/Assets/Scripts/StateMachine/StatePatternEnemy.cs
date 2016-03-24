@@ -24,7 +24,11 @@ public class StatePatternEnemy : MonoBehaviour
 	[HideInInspector] public PatrolState patrolState;
 	[HideInInspector] public AttackState attackState;
 	[HideInInspector] public NavMeshAgent navMeshAgent;
-	
+
+
+	[HideInInspector] public PlayerHealth playerHealth;
+
+
 	private void Awake()
 	{
 		chaseState = new ChaseState (this);
@@ -33,6 +37,9 @@ public class StatePatternEnemy : MonoBehaviour
 		attackState = new AttackState (this);
 
 		navMeshAgent = GetComponent<NavMeshAgent> ();
+
+
+			playerHealth = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponent<PlayerHealth>();
 	}
 	
 	// Use this for initialization

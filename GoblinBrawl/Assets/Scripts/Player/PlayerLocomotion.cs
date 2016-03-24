@@ -54,8 +54,10 @@ public class PlayerLocomotion : MonoBehaviour
 		slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
 
 		//print(slowMg);
-
-		movement(v, h, mg , slowMg);
+		if (health > 0)
+		{
+			movement (v, h, mg, slowMg);
+		}
 		//rotate(v, h);
 	}
 

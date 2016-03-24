@@ -6,8 +6,7 @@ public class AttackState : IEnemyState
 {
 	private readonly StatePatternEnemy enemy;
 	private float attackTimer;
-	private PlayerHealth playerHealth;
-	
+
 	public AttackState (StatePatternEnemy statePatternEnemy)
 	{
 		enemy = statePatternEnemy;
@@ -80,7 +79,7 @@ public class AttackState : IEnemyState
 
 			// If the player has health to lose...
 			// ... damage the player.
-				playerHealth.TakeDamage(enemy.attackDamage);
+			enemy.playerHealth.TakeDamage(enemy.attackDamage);
 
 		}
 
