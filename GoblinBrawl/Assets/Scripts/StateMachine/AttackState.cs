@@ -6,6 +6,7 @@ public class AttackState : IEnemyState
 {
 	private readonly StatePatternEnemy enemy;
 	private float attackTimer;
+	private PlayerHealth playerHealth;
 	
 	public AttackState (StatePatternEnemy statePatternEnemy)
 	{
@@ -36,21 +37,22 @@ public class AttackState : IEnemyState
 	
 	public void ToChaseState()
 	{
-		//enemy.currentState = enemy.chaseState;
+		enemy.currentState = enemy.chaseState;
 		//searchTimer = 0f;
 	}
 
 	public void ToAttackState()
 	{
-
+		//Debug.Log ("Can't transition to same state");
 	}
 
 
 	private void Look()
 	{
 		enemy.navMeshAgent.Stop ();
+		enemy.meshRendererFlag.material.color = Color.magenta;
 		RaycastHit hit;
-		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, 0.1f) && hit.collider.CompareTag ("Player"))
+		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, enemy.attackRange) && hit.collider.CompareTag ("Player"))
 		{
 			Debug.DrawLine (enemy.eyes.transform.position, hit.transform.position, Color.yellow);
 			Attack ();
@@ -58,7 +60,7 @@ public class AttackState : IEnemyState
 		}
 		else
 		{
-			ToAlertState();
+			ToChaseState();
 		}
 	}
 	
@@ -68,19 +70,18 @@ public class AttackState : IEnemyState
 		enemy.navMeshAgent.Stop ();
 		//attackTimer += Time.deltaTime;
 		attackTimer += Time.deltaTime;
-		
+		Debug.Log (attackTimer);
 		// If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
 		if(attackTimer >= enemy.attackRate && enemy.currentHealth > 0)
 		{
 			attackTimer = 0f;
+			enemy.meshRendererFlag.material.color = Color.white;
+			Debug.Log ("attacking");
 
-			Debug.Log ("attack");
 			// If the player has health to lose...
-			//if(playerHealth.currentHealth > 0)
-			//{
-				// ... damage the player.
-			//	playerHealth.TakeDamage (attackDamage);
-			//}
+			// ... damage the player.
+				playerHealth.TakeDamage(enemy.attackDamage);
+
 		}
 
 	}

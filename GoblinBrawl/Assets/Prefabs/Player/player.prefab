@@ -25,9 +25,10 @@ GameObject:
   - 4: {fileID: 466110}
   - 33: {fileID: 3378634}
   - 114: {fileID: 11451740}
+  - 114: {fileID: 11490060}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,7 +498,7 @@ GameObject:
   - 143: {fileID: 14389232}
   m_Layer: 0
   m_Name: Ethan
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1996,7 +1997,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.57000005, z: 0}
+  m_LocalPosition: {x: 0, y: 1.57000005, z: -7.76000023}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 433302}
@@ -2499,6 +2500,19 @@ MonoBehaviour:
   smooth: .100000001
   playerCamera: {fileID: 0}
   myCharacterController: {fileID: 14389232}
+--- !u!114 &11490060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2467f20eba4ff2f4a98299397a5c2d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealthValue: 100
+  HealthValue: {fileID: 0}
 --- !u!137 &13702532
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

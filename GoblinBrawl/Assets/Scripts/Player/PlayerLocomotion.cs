@@ -33,6 +33,7 @@ public class PlayerLocomotion : MonoBehaviour
 		health = gameObject.GetComponent<PlayerHealth>().playerHealthValue;
 	}
 
+
 	void Update()
 	{
 		

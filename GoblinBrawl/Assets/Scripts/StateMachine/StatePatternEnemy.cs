@@ -5,8 +5,10 @@ public class StatePatternEnemy : MonoBehaviour
 {
 	public float searchingTurnSpeed = 120f;
 	public float searchingDuration = 4f;
-	public float attackRate = 10f;
+	public float attackRate = 3f;
 	public float sightRange = 20f;
+	public float attackRange = 5f;
+	public int attackDamage  = 10;
 	public float currentHealth = 20;
 	public Transform[] wayPoints;
 	public Transform eyes;

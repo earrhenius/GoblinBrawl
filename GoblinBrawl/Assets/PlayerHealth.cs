@@ -24,11 +24,13 @@ public class PlayerHealth : MonoBehaviour {
 
 	public void TakeDamage (int amount)
 	{
+
+
 		// Set the damaged flag so the screen will flash.
 		//damaged = true;
 		
 		// Reduce the current health by the damage amount.
-		//currentHealth -= amount;
+		playerHealthValue -= amount;
 		
 		// Set the health bar's value to the current health.
 		//healthSlider.value = currentHealth;

@@ -48,9 +48,14 @@ public class ChaseState : IEnemyState
 	{
 		RaycastHit hit;
 		Vector3 enemyToTarget = (enemy.chaseTarget.position + enemy.offset) - enemy.eyes.transform.position;
-		if (Physics.Raycast (enemy.eyes.transform.position, enemyToTarget, out hit, enemy.sightRange) && hit.collider.CompareTag ("Player")) {
+		if (Physics.Raycast (enemy.eyes.transform.position, enemyToTarget, out hit, enemy.sightRange) && hit.collider.CompareTag("Player")) {
 			enemy.chaseTarget = hit.transform;
 			Debug.DrawLine (enemy.eyes.transform.position, hit.transform.position, Color.red);
+
+			if(Vector3.Distance(enemy.chaseTarget.position , enemy.transform.position)<1f)
+			{
+				ToAttackState();
+			}
 		}
 		else
 		{
@@ -65,6 +70,6 @@ public class ChaseState : IEnemyState
 		enemy.navMeshAgent.destination = enemy.chaseTarget.position;
 		enemy.navMeshAgent.Resume ();
 	}
-	
+
 	
 }
