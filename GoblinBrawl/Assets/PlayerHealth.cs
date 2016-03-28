@@ -1,14 +1,16 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour
+{
 
 
 	public int playerHealthValue =100;
 	// Use this for initialization
 	[SerializeField]
 	private Text HealthValue;
+	[HideInInspector] public bool isDead;
 
 	void Awake ()
 	{
@@ -28,10 +30,10 @@ public class PlayerHealth : MonoBehaviour {
 
 		// Set the damaged flag so the screen will flash.
 		//damaged = true;
-		
+
 		// Reduce the current health by the damage amount.
 		playerHealthValue -= amount;
-		
+
 		// Set the health bar's value to the current health.
 		//healthSlider.value = currentHealth;
 		
@@ -39,22 +41,23 @@ public class PlayerHealth : MonoBehaviour {
 		//playerAudio.Play ();
 		//
 		// If the player has lost all it's health and the death flag hasn't been set yet...
-		//if(currentHealth <= 0 && !isDead)
-		//{
-			// ... it should die.
-		//	Death ();
-		//}
+		if(playerHealthValue <= 0 && !isDead)
+		{
+
+			Death ();
+		}
 	}
 	
 	
 	void Death ()
 	{
 		// Set the death flag so this function won't be called again.
-		//isDead = true;
-		
+		isDead = true;
+
+		gameObject.GetComponent<PlayerLocomotion> ().isDead = true;
 		// Turn off any remaining shooting effects.
 		//playerShooting.DisableEffects ();
-		
+		gameObject.GetComponent<Ragdoll>().activateRagdoll = true;
 		// Tell the animator that the player is dead.
 		//anim.SetTrigger ("Die");
 		

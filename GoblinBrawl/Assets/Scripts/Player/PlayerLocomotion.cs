@@ -7,7 +7,7 @@ public class PlayerLocomotion : MonoBehaviour
 {
 	//annotatino:
 	//should create separate class with ctrler input
-	
+
 	[SerializeField]
 	private Animator anim;
 	public Quaternion newrotation;
@@ -19,45 +19,52 @@ public class PlayerLocomotion : MonoBehaviour
 	[SerializeField]
 	private CharacterController myCharacterController;
 
+
 	//[SerializeField]
 	//private Rigidbody myRigidbody;
 	//private float jumpPower = 15;
 	//private bool temp = false;
-	private float health;
+	public bool isDead;
 	//private float nextActionTime = 0.0f;
 	//private float period = 0.1f;
 
 	private float slowMg;
 	void Awake()
 	{
-		health = gameObject.GetComponent<PlayerHealth>().playerHealthValue;
+
 	}
 
 
 	void Update()
 	{
-		
 		//Debug.Log(arealState);
-		
-		float v = Input.GetAxis("Left Stick Y Axis");
-		float h = Input.GetAxis("Left Stick X Axis");
-		
-		//float rightTrigger = Input.GetAxis("RightTrigger");
-		//bool bButton = Input.GetButton("B");
-		//bool aButton = Input.GetButton("A");
-
-
-	
-
-		float mg = new Vector3(v, h, 0).magnitude;
-		
-		slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
-
-		//print(slowMg);
-		if (health > 0)
+		if (!isDead)
 		{
+			float v = Input.GetAxis("Left Stick Y Axis");
+			float h = Input.GetAxis("Left Stick X Axis");
+			
+			//float rightTrigger = Input.GetAxis("RightTrigger");
+			//bool bButton = Input.GetButton("B");
+			//bool aButton = Input.GetButton("A");
+
+
+		
+
+			float mg = new Vector3(v, h, 0).magnitude;
+			
+			slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
+
+			//print(slowMg);
+
 			movement (v, h, mg, slowMg);
+		
 		}
+		//else
+		//{
+		//still is 100
+		//Debug.Log(health);
+		//}
+		//}
 		//rotate(v, h);
 	}
 
@@ -70,12 +77,12 @@ public class PlayerLocomotion : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		float vertical = Input.GetAxis("Left Stick Y Axis");
-		float horizontal = Input.GetAxis("Left Stick X Axis");
-		
-		rotate(vertical, horizontal);
-		
-		
+		if (!isDead)
+		{
+			float vertical = Input.GetAxis("Left Stick Y Axis");
+			float horizontal = Input.GetAxis("Left Stick X Axis");
+			rotate(vertical, horizontal);
+		}
 	}
 	void movement(float v, float h, float mg, float slowMg)
 	{
@@ -85,7 +92,6 @@ public class PlayerLocomotion : MonoBehaviour
 
 			//anim.SetBool("DodgeRoll", false);
 			anim.SetFloat("movementSpeed", mg);
-
 			//then move the player in that direction
 		}
 		else

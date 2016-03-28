@@ -69,13 +69,13 @@ public class AttackState : IEnemyState
 		enemy.navMeshAgent.Stop ();
 		//attackTimer += Time.deltaTime;
 		attackTimer += Time.deltaTime;
-		Debug.Log (attackTimer);
+		//Debug.Log (attackTimer);
 		// If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
 		if(attackTimer >= enemy.attackRate && enemy.currentHealth > 0)
 		{
 			attackTimer = 0f;
 			enemy.meshRendererFlag.material.color = Color.white;
-			Debug.Log ("attacking");
+			//Debug.Log ("attacking");
 
 			// If the player has health to lose...
 			// ... damage the player.
