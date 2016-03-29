@@ -25,8 +25,8 @@ public class StatePatternEnemy : MonoBehaviour
 	[HideInInspector] public AttackState attackState;
 	[HideInInspector] public NavMeshAgent navMeshAgent;
 
-
 	[HideInInspector] public PlayerHealth playerHealth;
+	[HideInInspector] public DeathState deathState;
 
 
 	private void Awake()
@@ -35,7 +35,7 @@ public class StatePatternEnemy : MonoBehaviour
 		alertState = new AlertState (this);
 		patrolState = new PatrolState (this);
 		attackState = new AttackState (this);
-
+		deathState = new DeathState (this);
 		navMeshAgent = GetComponent<NavMeshAgent> ();
 
 

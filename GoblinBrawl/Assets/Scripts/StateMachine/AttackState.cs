@@ -25,7 +25,7 @@ public class AttackState : IEnemyState
 	
 	public void ToPatrolState()
 	{
-		//enemy.currentState = enemy.patrolState;
+		enemy.currentState = enemy.patrolState;
 		//searchTimer = 0f;
 	}
 	
@@ -45,6 +45,10 @@ public class AttackState : IEnemyState
 		//Debug.Log ("Can't transition to same state");
 	}
 
+	public void ToDeathState()
+	{
+		//Debug.Log ("Can't transition to same state");
+	}
 
 	private void Look()
 	{
@@ -81,6 +85,10 @@ public class AttackState : IEnemyState
 			// ... damage the player.
 			enemy.playerHealth.TakeDamage(enemy.attackDamage);
 
+		}
+		if (enemy.playerHealth.isDead)
+		{
+			ToPatrolState();
 		}
 
 	}

@@ -43,6 +43,10 @@ public class AlertState : IEnemyState
 	{
 		
 	}
+	public void ToDeathState()
+	{
+		//Debug.Log ("Can't transition to same state");
+	}
 
 	private void Look()
 	{

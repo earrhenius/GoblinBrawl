@@ -43,6 +43,10 @@ public class ChaseState : IEnemyState
 	{
 		enemy.currentState = enemy.attackState;
 	}
+	public void ToDeathState()
+	{
+		//Debug.Log ("Can't transition to same state");
+	}
 
 	private void Look()
 	{
