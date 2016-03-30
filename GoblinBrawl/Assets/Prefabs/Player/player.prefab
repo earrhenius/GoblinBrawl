@@ -27,6 +27,7 @@ GameObject:
   - 114: {fileID: 11451740}
   - 114: {fileID: 11490060}
   - 114: {fileID: 11400590}
+  - 114: {fileID: 11499112}
   m_Layer: 0
   m_Name: player
   m_TagString: PlayerComponents
@@ -2738,6 +2739,19 @@ MonoBehaviour:
   playerHealthValue: 100
   HealthValue: {fileID: 0}
   isDead: 0
+--- !u!114 &11499112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6345a0049307ab24a950590b83cd38db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDead: 0
+  anim: {fileID: 9507262}
 --- !u!135 &13578766
 SphereCollider:
   m_ObjectHideFlags: 1

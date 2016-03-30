@@ -55,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
 		isDead = true;
 
 		gameObject.GetComponent<PlayerLocomotion> ().isDead = true;
+		gameObject.GetComponent<PlayerAttack> ().isDead = true;
 		// Turn off any remaining shooting effects.
 		//playerShooting.DisableEffects ();
 		gameObject.GetComponent<Ragdoll>().activateRagdoll = true;
