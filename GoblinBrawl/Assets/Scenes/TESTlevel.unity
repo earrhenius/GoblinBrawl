@@ -1072,6 +1072,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11451740, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 685567832}
     - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: m_LocalRotation.x
       value: .532675147
@@ -1088,10 +1092,6 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -.110415131
       objectReference: {fileID: 0}
-    - target: {fileID: 11451740, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
-      propertyPath: playerCamera
-      value: 
-      objectReference: {fileID: 685567832}
     - target: {fileID: 11490060, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: HealthValue
       value: 
@@ -1444,19 +1444,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 467866, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
       propertyPath: m_LocalRotation.x
-      value: .532675207
+      value: .532675147
       objectReference: {fileID: 0}
     - target: {fileID: 467866, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .0703404546
+      value: .0703404471
       objectReference: {fileID: 0}
     - target: {fileID: 467866, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .836132765
+      value: .836132646
       objectReference: {fileID: 0}
     - target: {fileID: 467866, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.110415146
+      value: -.110415131
       objectReference: {fileID: 0}
     - target: {fileID: 11460664, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
       propertyPath: wayPoints.Array.data[0]
@@ -1502,10 +1502,6 @@ Prefab:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1466815356}
-    - target: {fileID: 11460664, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
-      propertyPath: currentHealth
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
   m_IsPrefabParent: 0
