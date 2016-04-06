@@ -1072,41 +1072,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .532675147
+      objectReference: {fileID: 0}
+    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .0703404471
+      objectReference: {fileID: 0}
+    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .836132646
+      objectReference: {fileID: 0}
+    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.110415131
+      objectReference: {fileID: 0}
     - target: {fileID: 11451740, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 685567832}
-    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: .532675207
-      objectReference: {fileID: 0}
-    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: .0703404546
-      objectReference: {fileID: 0}
-    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .836132765
-      objectReference: {fileID: 0}
-    - target: {fileID: 467866, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.110415146
-      objectReference: {fileID: 0}
     - target: {fileID: 11490060, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: HealthValue
       value: 
       objectReference: {fileID: 1119641136}
     - target: {fileID: 14461268, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: m_ConnectedAnchor.x
-      value: -.201175019
+      value: -.2011749
       objectReference: {fileID: 0}
     - target: {fileID: 14461268, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: m_ConnectedAnchor.y
-      value: .0352030396
+      value: .0352030247
       objectReference: {fileID: 0}
     - target: {fileID: 14461268, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
       propertyPath: m_ConnectedAnchor.z
-      value: .140886307
+      value: .140886292
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0129b7aeffffd6468fcbfd1417280ad, type: 2}
@@ -1502,6 +1502,10 @@ Prefab:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1466815356}
+    - target: {fileID: 11460664, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9525e5f344c9b2c43af21204c77e66ff, type: 2}
   m_IsPrefabParent: 0

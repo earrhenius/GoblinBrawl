@@ -8,11 +8,19 @@ public class PlayerAttack : MonoBehaviour
 	[SerializeField]
 	private Animator anim;
 	private bool xButton;
-	void Awake()
+	[SerializeField]
+	private GameObject[] Weapons;
 
-	{
+	//IEnumerator AttackButtonAndWait(float waitTime)
+	//{
 
-	}
+		//yield return new WaitForSeconds(waitTime);
+		//for(int i = 0; i < Weapons.Length; i++)
+		//{
+		//	Weapons[i].GetComponent<Weapon>().oneTime=false;
+		//}
+
+	//}
 	// Use this for initialization
 	void FixedUpdate()
 	{
@@ -21,6 +29,10 @@ public class PlayerAttack : MonoBehaviour
 			if (Input.GetButtonDown("X"))
 	   		{
 				anim.SetTrigger("NormalAttack");
+				//coroutine how often button can be pressed
+
+				//StartCoroutine(AttackButtonAndWait(3.0F));
+
 
 	   		}
 

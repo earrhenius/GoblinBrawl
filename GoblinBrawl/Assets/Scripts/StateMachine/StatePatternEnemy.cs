@@ -28,7 +28,7 @@ public class StatePatternEnemy : MonoBehaviour
 	[HideInInspector] public PlayerHealth playerHealth;
 	[HideInInspector] public DeathState deathState;
 
-
+	[HideInInspector] public Animator playerAnim;
 	private void Awake()
 	{
 		chaseState = new ChaseState (this);
@@ -39,7 +39,8 @@ public class StatePatternEnemy : MonoBehaviour
 		navMeshAgent = GetComponent<NavMeshAgent> ();
 
 
-			playerHealth = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponent<PlayerHealth>();
+		playerHealth = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponent<PlayerHealth>();
+		playerAnim = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponentInChildren<Animator>();
 	}
 	
 	// Use this for initialization
@@ -49,13 +50,38 @@ public class StatePatternEnemy : MonoBehaviour
 	}
 	
 	// Update is called once per frame
+	public void TakeDamage(int amount)
+	{
+
+		currentHealth -= amount;
+		if (currentHealth <= 0)
+		{
+			currentState = deathState;
+		}
+		Debug.Log(currentHealth);
+	}
+	
 	void Update () 
 	{
 		currentState.UpdateState ();
+		
+
+		
 	}
 	
 	private void OnTriggerEnter(Collider other)
 	{
-		currentState.OnTriggerEnter (other);
+		currentState.OnTriggerEnter(other);
+		//if (other.gameObject.CompareTag ("Weapon"))
+		//{
+		//
+		//if (currentHealth <= 0)
+		//{
+		//	currentState = deathState;
+		//	Destroy(gameObject);
+		//}
+		//	TakeDamage(playerHealth.playerWeaponDamage);
+		//	Debug.Log(currentHealth);
+		//}
 	}
 }

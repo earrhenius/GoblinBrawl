@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 
 
 	public int playerHealthValue =100;
+	public int playerWeaponDamage =10;
 	// Use this for initialization
 	[SerializeField]
 	private Text HealthValue;

@@ -41,13 +41,16 @@ public class ChaseState : IEnemyState
 
 	public void ToAttackState()
 	{
-		enemy.currentState = enemy.attackState;
+
 	}
 	public void ToDeathState()
 	{
+		enemy.currentState = enemy.deathState;
+	}
+	public void ToHurtState()
+	{
 		//Debug.Log ("Can't transition to same state");
 	}
-
 	private void Look()
 	{
 		RaycastHit hit;
@@ -61,6 +64,7 @@ public class ChaseState : IEnemyState
 				ToAttackState();
 			}
 		}
+
 		else
 		{
 			ToAlertState();

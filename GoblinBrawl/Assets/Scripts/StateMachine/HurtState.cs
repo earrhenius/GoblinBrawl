@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DeathState : IEnemyState 
+public class HurtState : IEnemyState 
 	
 {
 	private readonly StatePatternEnemy enemy;
 
-	public DeathState (StatePatternEnemy statePatternEnemy)
+	public HurtState (StatePatternEnemy statePatternEnemy)
 	{
 	}
 	
 	public void UpdateState()
 	{
-		Debug.Log ("dead");
+		Hurt();
 	}
 	
 	public void OnTriggerEnter (Collider other)
@@ -42,13 +42,16 @@ public class DeathState : IEnemyState
 
 	public void ToDeathState()
 	{
-		//Debug.Log ("Can't transition to same state");
+		enemy.currentState = enemy.deathState;
 	}
 	public void ToHurtState()
 	{
 		//Debug.Log ("Can't transition to same state");
 	}
+	void Hurt()
+	{
 
+	}
 
 	
 	

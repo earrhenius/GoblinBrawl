@@ -45,9 +45,12 @@ public class AlertState : IEnemyState
 	}
 	public void ToDeathState()
 	{
+		enemy.currentState = enemy.deathState;
+	}
+	public void ToHurtState()
+	{
 		//Debug.Log ("Can't transition to same state");
 	}
-
 	private void Look()
 	{
 		RaycastHit hit;

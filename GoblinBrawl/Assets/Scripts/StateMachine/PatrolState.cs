@@ -46,7 +46,10 @@ public class PatrolState : IEnemyState
 	{
 		//Debug.Log ("Can't transition to same state");
 	}
-
+	public void ToHurtState()
+	{
+		enemy.currentState = enemy.deathState;
+	}
 	private void Look()
 	{
 		RaycastHit hit;
@@ -62,7 +65,8 @@ public class PatrolState : IEnemyState
 		enemy.navMeshAgent.destination = enemy.wayPoints [nextWayPoint].position;
 		enemy.navMeshAgent.Resume ();
 		
-		if (enemy.navMeshAgent.remainingDistance <= enemy.navMeshAgent.stoppingDistance && !enemy.navMeshAgent.pathPending) {
+		if (enemy.navMeshAgent.remainingDistance <= enemy.navMeshAgent.stoppingDistance && !enemy.navMeshAgent.pathPending)
+		{
 			nextWayPoint =(nextWayPoint + 1) % enemy.wayPoints.Length;
 			
 		}

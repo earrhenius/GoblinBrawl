@@ -17,4 +17,6 @@ public interface IEnemyState
 	void ToAttackState();
 
 	void ToDeathState();
+
+	void ToHurtState();
 }

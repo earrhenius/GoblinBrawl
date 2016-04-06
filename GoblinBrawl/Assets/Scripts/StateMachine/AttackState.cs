@@ -15,7 +15,6 @@ public class AttackState : IEnemyState
 	public void UpdateState()
 	{
 		Look ();
-
 	}
 	
 	public void OnTriggerEnter (Collider other)
@@ -47,9 +46,12 @@ public class AttackState : IEnemyState
 
 	public void ToDeathState()
 	{
+		enemy.currentState = enemy.deathState;
+	}
+	public void ToHurtState()
+	{
 		//Debug.Log ("Can't transition to same state");
 	}
-
 	private void Look()
 	{
 		enemy.navMeshAgent.Stop ();
@@ -90,7 +92,7 @@ public class AttackState : IEnemyState
 		{
 			ToPatrolState();
 		}
-
+	
 	}
 	
 	
