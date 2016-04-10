@@ -14,7 +14,14 @@ public class StatePatternEnemy : MonoBehaviour
 	public Transform eyes;
 	public Vector3 offset = new Vector3 (0,.5f,0);
 	public MeshRenderer meshRendererFlag;
-	
+	[HideInInspector]public float movementSpeed = 0f;
+	[HideInInspector]public float turnSpeed = 0f;
+	Vector3 m_GroundNormal;
+
+	[HideInInspector]public float m_TurnAmount = 0f;
+	[HideInInspector]public float m_ForwardAmount = 0f;
+
+
 	private MeshCollider damageHitBox;
 
 	[HideInInspector] public Transform chaseTarget;
@@ -24,7 +31,7 @@ public class StatePatternEnemy : MonoBehaviour
 	[HideInInspector] public PatrolState patrolState;
 	[HideInInspector] public AttackState attackState;
 	[HideInInspector] public NavMeshAgent navMeshAgent;
-
+	[HideInInspector] public Animator enemyAnimator;
 	[HideInInspector] public PlayerHealth playerHealth;
 	[HideInInspector] public DeathState deathState;
 
@@ -36,9 +43,9 @@ public class StatePatternEnemy : MonoBehaviour
 		patrolState = new PatrolState (this);
 		attackState = new AttackState (this);
 		deathState = new DeathState (this);
-		navMeshAgent = GetComponent<NavMeshAgent> ();
+		navMeshAgent = GetComponentInChildren<NavMeshAgent> ();
 
-
+		enemyAnimator = gameObject.GetComponentInChildren<Animator>();
 		playerHealth = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponent<PlayerHealth>();
 		playerAnim = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponentInChildren<Animator>();
 	}
@@ -68,7 +75,28 @@ public class StatePatternEnemy : MonoBehaviour
 
 		
 	}
-	
+	public void Move(Vector3 move)
+	{
+		if (move.magnitude > 1f) move.Normalize();
+
+		move = transform.InverseTransformDirection(move);
+
+		move = Vector3.ProjectOnPlane(move, m_GroundNormal);
+
+		m_TurnAmount = Mathf.Atan2(move.x, move.z);
+
+		m_ForwardAmount = move.z;
+
+		UpdateAnimator(move);
+	}
+	void UpdateAnimator(Vector3 move)
+	{
+		Debug.Log (m_TurnAmount);
+		// update the animator parameters
+		enemyAnimator.SetFloat ("movementSpeed", m_ForwardAmount*10, 0.1f, Time.deltaTime);
+		enemyAnimator.SetFloat ("turnSpeed", m_TurnAmount*10, 0.1f, Time.deltaTime);
+	}
+
 	private void OnTriggerEnter(Collider other)
 	{
 		currentState.OnTriggerEnter(other);

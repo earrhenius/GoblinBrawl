@@ -15,6 +15,7 @@ public class AttackState : IEnemyState
 	public void UpdateState()
 	{
 		Look ();
+		Debug.Log("Attacking");
 	}
 	
 	public void OnTriggerEnter (Collider other)

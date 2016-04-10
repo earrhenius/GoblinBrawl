@@ -52,6 +52,7 @@ public class PatrolState : IEnemyState
 	}
 	private void Look()
 	{
+
 		RaycastHit hit;
 		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, enemy.sightRange) && hit.collider.CompareTag ("Player")) {
 			enemy.chaseTarget = hit.transform;
@@ -61,6 +62,11 @@ public class PatrolState : IEnemyState
 	
 	void Patrol ()
 	{
+
+		//enemy.enemyAnimator.SetFloat ("movementSpeed", 2.0f);
+		//slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
+		enemy.Move(enemy.navMeshAgent.desiredVelocity);
+		//Debug.Log (enemy.navMeshAgent.desiredVelocity);
 		enemy.meshRendererFlag.material.color = Color.green;
 		enemy.navMeshAgent.destination = enemy.wayPoints [nextWayPoint].position;
 		enemy.navMeshAgent.Resume ();

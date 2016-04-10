@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DamageScript.cs" />
      <Compile Include="Assets\PlayerAttack.cs" />
      <Compile Include="Assets\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
@@ -56,21 +57,17 @@
      <Compile Include="Assets\Scripts\StateMachine\AttackState.cs" />
      <Compile Include="Assets\Scripts\StateMachine\ChaseState.cs" />
      <Compile Include="Assets\Scripts\StateMachine\DeathState.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\HurtState.cs" />
      <Compile Include="Assets\Scripts\StateMachine\IEnemyState.cs" />
      <Compile Include="Assets\Scripts\StateMachine\PatrolState.cs" />
      <Compile Include="Assets\Scripts\StateMachine\StatePatternEnemy.cs" />
+     <Compile Include="Assets\Weapon.cs" />
      <None Include="Assets\Textures\UI\test.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

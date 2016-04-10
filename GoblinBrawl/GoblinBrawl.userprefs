@@ -1,19 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerAttack.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StateMachine\PatrolState.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\PlayerLocomotion.cs" Line="27" Column="2" />
-      <File FileName="Assets\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerLocomotion.cs" Line="55" Column="4" />
+      <File FileName="Assets\Scripts\StateMachine\PatrolState.cs" Line="64" Column="3" />
+      <File FileName="Assets\Weapon.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StateMachine\AttackState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StateMachine\StatePatternEnemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StateMachine\IEnemyState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StateMachine\PatrolState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StateMachine\AlertState.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StateMachine\ChaseState.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy\EnemyManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player\Ragdoll.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StateMachine\DeathState.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlayerAttack.cs" Line="8" Column="17" />
+      <File FileName="Assets\PlayerAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StateMachine\AlertState.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StateMachine\StatePatternEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\DamageScript.cs" Line="1" Column="1" />
+      <File FileName="C:\Users\Public\Documents\Unity Projects\Standard Assets Example Project\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
+      <File FileName="C:\Users\Public\Documents\Unity Projects\Standard Assets Example Project\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

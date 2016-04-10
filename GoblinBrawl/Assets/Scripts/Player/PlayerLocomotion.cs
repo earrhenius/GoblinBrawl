@@ -3,7 +3,7 @@ using System.Collections;
 
 
 public class PlayerLocomotion : MonoBehaviour
-	
+
 {
 	//annotatino:
 	//should create separate class with ctrler input
