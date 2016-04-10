@@ -65,7 +65,7 @@ public class PatrolState : IEnemyState
 
 		//enemy.enemyAnimator.SetFloat ("movementSpeed", 2.0f);
 		//slowMg = Mathf.Lerp(slowMg, mg, (Time.deltaTime*4));
-		enemy.Move(enemy.navMeshAgent.desiredVelocity);
+		//enemy.Move(enemy.navMeshAgent.desiredVelocity);
 		//Debug.Log (enemy.navMeshAgent.desiredVelocity);
 		enemy.meshRendererFlag.material.color = Color.green;
 		enemy.navMeshAgent.destination = enemy.wayPoints [nextWayPoint].position;

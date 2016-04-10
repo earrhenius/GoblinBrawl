@@ -77,6 +77,9 @@ public class StatePatternEnemy : MonoBehaviour
 	}
 	public void Move(Vector3 move)
 	{
+
+
+
 		if (move.magnitude > 1f) move.Normalize();
 
 		move = transform.InverseTransformDirection(move);
@@ -91,10 +94,18 @@ public class StatePatternEnemy : MonoBehaviour
 	}
 	void UpdateAnimator(Vector3 move)
 	{
-		Debug.Log (m_TurnAmount);
+		//Debug.Log (m_TurnAmount);
 		// update the animator parameters
 		enemyAnimator.SetFloat ("movementSpeed", m_ForwardAmount*10, 0.1f, Time.deltaTime);
 		enemyAnimator.SetFloat ("turnSpeed", m_TurnAmount*10, 0.1f, Time.deltaTime);
+
+
+		//var desiredDistance = Vector3.Distance(navMeshAgent.desiredVelocity, Vector3(0,0,0));
+		//currentVelocity = Mathf.Lerp(lastVelocity, desiredDistance, (Time.deltaTime * 2));
+		//lastVelocity = currentVelocity;
+		//enemyAnimator.SetFloat("movementSpeed", lastVelocity);        // Pass currentVelocity to Animator
+		
+
 	}
 
 	private void OnTriggerEnter(Collider other)
