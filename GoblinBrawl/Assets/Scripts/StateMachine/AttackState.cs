@@ -56,6 +56,7 @@ public class AttackState : IEnemyState
 	private void Look()
 	{
 		enemy.navMeshAgent.Stop ();
+		enemy.enemyAnimator.SetFloat ("movementSpeed", 0.0f);
 		enemy.meshRendererFlag.material.color = Color.magenta;
 		RaycastHit hit;
 		if (Physics.Raycast (enemy.eyes.transform.position, enemy.eyes.transform.forward, out hit, enemy.attackRange) && hit.collider.CompareTag ("Player"))
@@ -72,7 +73,7 @@ public class AttackState : IEnemyState
 	
 	private void Attack()
 	{
-
+		enemy.enemyAnimator.SetFloat ("movementSpeed", 0.0f);
 		enemy.navMeshAgent.Stop ();
 		//attackTimer += Time.deltaTime;
 		attackTimer += Time.deltaTime;

@@ -3,6 +3,10 @@ using System.Collections;
 
 public class StatePatternEnemy : MonoBehaviour 
 {
+
+
+
+
 	public float searchingTurnSpeed = 120f;
 	public float searchingDuration = 4f;
 	public float attackRate = 3f;
@@ -12,7 +16,7 @@ public class StatePatternEnemy : MonoBehaviour
 	public float currentHealth = 20;
 	public Transform[] wayPoints;
 	public Transform eyes;
-	public Vector3 offset = new Vector3 (0,.5f,0);
+	public Vector3 offset = new Vector3 (0,10.5f,0);
 	public MeshRenderer meshRendererFlag;
 	[HideInInspector]public float movementSpeed = 0f;
 	[HideInInspector]public float turnSpeed = 0f;
@@ -36,6 +40,15 @@ public class StatePatternEnemy : MonoBehaviour
 	[HideInInspector] public DeathState deathState;
 
 	[HideInInspector] public Animator playerAnim;
+
+
+	//public GameObject particle;
+	//protected NavMeshAgent agent;
+	//protected Animator animator;
+	
+	//protected Locomotion locomotion;
+
+
 	private void Awake()
 	{
 		chaseState = new ChaseState (this);
@@ -106,6 +119,11 @@ public class StatePatternEnemy : MonoBehaviour
 		//enemyAnimator.SetFloat("movementSpeed", lastVelocity);        // Pass currentVelocity to Animator
 		
 
+	}
+	void OnAnimatorMove()
+	{
+		navMeshAgent.velocity = enemyAnimator.deltaPosition / Time.deltaTime;
+		transform.rotation = enemyAnimator.rootRotation;
 	}
 
 	private void OnTriggerEnter(Collider other)

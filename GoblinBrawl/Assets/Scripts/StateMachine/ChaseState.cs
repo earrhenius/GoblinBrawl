@@ -16,7 +16,7 @@ public class ChaseState : IEnemyState
 	public void UpdateState()
 	{
 		Look ();
-		Chase ();
+
 	}
 	
 	public void OnTriggerEnter (Collider other)
@@ -42,6 +42,7 @@ public class ChaseState : IEnemyState
 	public void ToAttackState()
 	{
 		enemy.currentState = enemy.attackState;
+
 	}
 	public void ToDeathState()
 	{
@@ -54,7 +55,20 @@ public class ChaseState : IEnemyState
 	private void Look()
 	{
 		RaycastHit hit;
+		Vector3 enemyForward = (enemy.gameObject.transform.forward);
 		Vector3 enemyToTarget = (enemy.chaseTarget.position + enemy.offset) - enemy.eyes.transform.position;
+
+
+		float angle = Vector3.Angle(enemyForward, enemyToTarget);
+		Vector3 cross = Vector3.Cross(enemyForward, enemyToTarget);
+		if (cross.y < 0) {
+			angle = -angle;
+		}
+		//float clampedAngle = Mathf.Clamp (angle, 90f, -90f);
+		//float evenMoreclampedAngle = Mathf.Clamp (clampedAngle, 2f, -2f);
+		//float angle = Vector3.Angle(enemyToTarget, enemyForward);
+		Debug.Log(angle);
+		Chase ((angle*0.0273984f));
 		if (Physics.Raycast (enemy.eyes.transform.position, enemyToTarget, out hit, enemy.sightRange) && hit.collider.CompareTag("Player")) {
 			enemy.chaseTarget = hit.transform;
 			Debug.DrawLine (enemy.eyes.transform.position, hit.transform.position, Color.red);
@@ -72,8 +86,14 @@ public class ChaseState : IEnemyState
 		
 	}
 	
-	private void Chase()
+	private void Chase(float turningSpeed)
 	{
+
+		//transform.rotation = Quaternion.Lerp(turretBall.rotation, desiredRotation, Time.deltaTime * turnSpeed); 
+		enemy.enemyAnimator.SetFloat("turningSpeed", turningSpeed);
+		//try aiming for player
+
+		enemy.enemyAnimator.SetFloat ("movementSpeed", 5.0f);
 		enemy.meshRendererFlag.material.color = Color.red;
 		enemy.navMeshAgent.destination = enemy.chaseTarget.position;
 		enemy.navMeshAgent.Resume ();

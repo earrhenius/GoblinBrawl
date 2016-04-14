@@ -27,6 +27,7 @@ public class AlertState : IEnemyState
 	{
 		enemy.currentState = enemy.patrolState;
 		searchTimer = 0f;
+		enemy.enemyAnimator.SetFloat("turningSpeed", 0.0f);
 	}
 	
 	public void ToAlertState()
@@ -36,6 +37,7 @@ public class AlertState : IEnemyState
 	
 	public void ToChaseState()
 	{
+
 		enemy.currentState = enemy.chaseState;
 		searchTimer = 0f;
 	}
@@ -66,7 +68,9 @@ public class AlertState : IEnemyState
 	{
 		enemy.meshRendererFlag.material.color = Color.yellow;
 		enemy.navMeshAgent.Stop ();
-		enemy.transform.Rotate (0, enemy.searchingTurnSpeed * Time.deltaTime, 0);
+		enemy.enemyAnimator.SetFloat ("movementSpeed", 0.0f);
+		enemy.enemyAnimator.SetFloat ("turningSpeed", 2.0f);
+		//enemy.transform.Rotate (0, enemy.searchingTurnSpeed * Time.deltaTime, 0);
 		searchTimer += Time.deltaTime;
 		
 		if (searchTimer >= enemy.searchingDuration)
