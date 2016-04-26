@@ -68,7 +68,8 @@ public class ChaseState : IEnemyState
 		//float evenMoreclampedAngle = Mathf.Clamp (clampedAngle, 2f, -2f);
 		//float angle = Vector3.Angle(enemyToTarget, enemyForward);
 		Debug.Log(angle);
-		Chase ((angle*0.0273984f));
+
+		Chase ((angle*0.01f));
 		if (Physics.Raycast (enemy.eyes.transform.position, enemyToTarget, out hit, enemy.sightRange) && hit.collider.CompareTag("Player")) {
 			enemy.chaseTarget = hit.transform;
 			Debug.DrawLine (enemy.eyes.transform.position, hit.transform.position, Color.red);

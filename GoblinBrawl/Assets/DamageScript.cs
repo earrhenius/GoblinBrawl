@@ -34,7 +34,7 @@ public class DamageScript : MonoBehaviour {
 			oneTime = false;
 			//StartCoroutine(AttackButtonAndWait(2.0F));
 			
-			
+			//print();
 		}
 	}
 
@@ -42,6 +42,7 @@ public class DamageScript : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag ("Weapon"))
 		{
+			//print(enemy.playerAnim);
 			if(enemy.playerAnim.GetCurrentAnimatorStateInfo(0).IsName("SlidePunch 1") || enemy.playerAnim.GetCurrentAnimatorStateInfo(0).IsName("NormalAttack2") || enemy.playerAnim.GetCurrentAnimatorStateInfo(0).IsName("NormalAttack3"))
 			{
 
@@ -56,6 +57,7 @@ public class DamageScript : MonoBehaviour {
 					}
 
 			}
+
 		}
 	}
 }

@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &117868
 GameObject:
   m_ObjectHideFlags: 1
@@ -2131,7 +2131,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181166}
-  m_LocalRotation: {x: .532675207, y: .0703404546, z: .836132765, w: -.110415146}
+  m_LocalRotation: {x: .532675147, y: .0703404471, z: .836132646, w: -.110415131}
   m_LocalPosition: {x: 2.22714643e-05, y: -6.1504652e-05, z: .0260270257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2520,7 +2520,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156720}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -2568,7 +2568,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134150}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -3275,7 +3275,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .0879453421, y: -.0141218957, z: .229419172}
+  m_ConnectedAnchor: {x: .0879453421, y: -.0141218882, z: .229419172}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -3443,7 +3443,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.2011749, y: .0352032557, z: .140886292}
+  m_ConnectedAnchor: {x: -.201175019, y: .0352032632, z: .140886307}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:

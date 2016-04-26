@@ -84,6 +84,7 @@ public class AttackState : IEnemyState
 			attackTimer = 0f;
 			enemy.meshRendererFlag.material.color = Color.white;
 			//Debug.Log ("attacking");
+			enemy.enemyAnimator.SetTrigger("Attack");
 
 			// If the player has health to lose...
 			// ... damage the player.

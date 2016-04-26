@@ -100,7 +100,8 @@ ModelImporter:
     4300000: pSphere2
     4300002: pSphere1
     4300004: goblinMesh
-    7400000: Take 001
+    7400000: GoblinChop1
+    7400002: GoblinChop2
     9500000: //RootNode
     13700000: goblinMesh
   materials:
@@ -116,13 +117,241 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GoblinChop1
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: goblinMesh
+        weight: 1
+      - path: scale_root_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn/scale_l_foot_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn/scale_l_foot_bn/scale_l_toe_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn/scale_l_foot_bn/scale_l_toe_bn/scale_l_tip_jt
+        weight: 1
+      - path: scale_root_bn/scale_pelvis_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn/scale_r_foot_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn/scale_r_foot_bn/scale_r_toe_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn/scale_r_foot_bn/scale_r_toe_bn/scale_r_tip_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger0Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger0Base_bn/scale_l_finger0Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger0Base_bn/scale_l_finger0Mid_bn/scale_l_finger0End_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger1Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger1Base_bn/scale_l_finger1Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger1Base_bn/scale_l_finger1Mid_bn/scale_l_finger1End_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn/pSphere1
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn/pSphere2
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn/scale_head_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger0Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger0Base_bn/scale_r_finger0Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger0Base_bn/scale_r_finger0Mid_bn/scale_r_finger0End_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger1Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger1Base_bn/scale_r_finger1Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger1Base_bn/scale_r_finger1Mid_bn/scale_r_finger1End_jt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: GoblinChop2
+      takeName: Take 001
+      firstFrame: 18
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: goblinMesh
+        weight: 1
+      - path: scale_root_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn/scale_l_foot_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn/scale_l_foot_bn/scale_l_toe_bn
+        weight: 1
+      - path: scale_root_bn/scale_l_leg_bn/scale_l_knee_bn/scale_l_foot_bn/scale_l_toe_bn/scale_l_tip_jt
+        weight: 1
+      - path: scale_root_bn/scale_pelvis_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn/scale_r_foot_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn/scale_r_foot_bn/scale_r_toe_bn
+        weight: 1
+      - path: scale_root_bn/scale_r_leg_bn/scale_r_knee_bn/scale_r_foot_bn/scale_r_toe_bn/scale_r_tip_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger0Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger0Base_bn/scale_l_finger0Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger0Base_bn/scale_l_finger0Mid_bn/scale_l_finger0End_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger1Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger1Base_bn/scale_l_finger1Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_l_clavicle_bn/scale_l_shoulder_bn/scale_l_elbow_bn/scale_l_wrist_bn/scale_l_hand_bn/scale_l_finger1Base_bn/scale_l_finger1Mid_bn/scale_l_finger1End_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn/pSphere1
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn/pSphere2
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_neck_bn/scale_head_bn/scale_head_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger0Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger0Base_bn/scale_r_finger0Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger0Base_bn/scale_r_finger0Mid_bn/scale_r_finger0End_jt
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger1Base_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger1Base_bn/scale_r_finger1Mid_bn
+        weight: 1
+      - path: scale_root_bn/scale_spine1_bn/scale_spineEnd_bn/scale_chest_bn/scale_r_clavicle_bn/scale_r_shoulder_bn/scale_r_elbow_bn/scale_r_wrist_bn/scale_r_hand_bn/scale_r_finger1Base_bn/scale_r_finger1Mid_bn/scale_r_finger1End_jt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -149,8 +378,492 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: scale_root_bn
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_leg_bn
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_leg_bn
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_knee_bn
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_knee_bn
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_foot_bn
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_foot_bn
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_spine1_bn
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_spineEnd_bn
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_neck_bn
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_head_bn
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_clavicle_bn
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_clavicle_bn
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_shoulder_bn
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_shoulder_bn
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_elbow_bn
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_elbow_bn
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_wrist_bn
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_wrist_bn
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_toe_bn
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_toe_bn
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pSphere1
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pSphere2
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_finger0Base_bn
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_finger0Mid_bn
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_finger0End_jt
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_finger1Mid_bn
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_l_finger1End_jt
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_finger0Base_bn
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_finger0Mid_bn
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_finger0End_jt
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_finger1Mid_bn
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: scale_r_finger1End_jt
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Goblin_Dagger_Chop(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: goblinMesh
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_root_bn
+      position: {x: -9.12109521e-19, y: .0186873227, z: -.00416755956}
+      rotation: {x: .526958644, y: -.471502483, z: -.526958644, w: .471502483}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_spine1_bn
+      position: {x: -.00382361771, y: 2.220446e-18, z: -1.94960086e-19}
+      rotation: {x: 0, y: 0, z: .0436192863, w: .999048233}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_spineEnd_bn
+      position: {x: -.00278983079, y: -2.220446e-18, z: -3.3790708e-19}
+      rotation: {x: 0, y: 0, z: .0690946653, w: .997610092}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_chest_bn
+      position: {x: -.00473622466, y: -4.16333625e-19, z: -1.05165313e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_neck_bn
+      position: {x: -.00306797936, y: .000741256925, z: 3.94430444e-33}
+      rotation: {x: 0, y: -0, z: -.310723692, w: .950500309}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_head_bn
+      position: {x: -.00297358353, y: 4.440892e-18, z: -1.10207486e-18}
+      rotation: {x: 0, y: 0, z: .196190953, w: .980565727}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pSphere1
+      position: {x: -.00753558846, y: .0042009647, z: .00267515006}
+      rotation: {x: .529637456, y: -.468491405, z: -.529637456, w: -.468491405}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pSphere2
+      position: {x: -.00753558846, y: .0042009647, z: -.00264639966}
+      rotation: {x: .529637456, y: -.468491405, z: -.529637456, w: -.468491405}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_head_jt
+      position: {x: -.012117804, y: -4.440892e-18, z: -5.44543647e-19}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_clavicle_bn
+      position: {x: .000765680743, y: -9.58664714e-06, z: .000738463306}
+      rotation: {x: .749669671, y: -.0464847945, z: -.658912182, w: -.0408571884}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_shoulder_bn
+      position: {x: -.00409591245, y: 2.7755574e-18, z: 8.881784e-18}
+      rotation: {x: .0373111404, y: -.0888551101, z: .000793157029, w: .995345235}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_elbow_bn
+      position: {x: -.0084536178, y: 0, z: -4.440892e-18}
+      rotation: {x: -.00289975153, y: .0189462714, z: .0362164676, w: .99916023}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_wrist_bn
+      position: {x: -.00361961988, y: -2.220446e-18, z: 8.881784e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_hand_bn
+      position: {x: -.00344477431, y: 3.8857806e-18, z: -3.10862448e-17}
+      rotation: {x: 0, y: -.0801809952, z: -0, w: .996780336}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_finger0Base_bn
+      position: {x: -.00158013776, y: -.00277069118, z: -.000909069029}
+      rotation: {x: .961382329, y: .0381578356, z: .0254986677, w: .271362811}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_finger0Mid_bn
+      position: {x: -.00181229308, y: 6.661338e-18, z: 8.881784e-18}
+      rotation: {x: -3.07336414e-08, y: -8.79168397e-07, z: .0272596702, w: .999628484}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_finger0End_jt
+      position: {x: -.00134221674, y: -4.440892e-18, z: -5.55111479e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_finger1Base_bn
+      position: {x: -.00577824516, y: 1.72523386e-07, z: .000801206334}
+      rotation: {x: .646428466, y: -.129086047, z: .143563464, w: .73814404}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_finger1Mid_bn
+      position: {x: -.00197059987, y: -1.7763568e-17, z: 8.11850557e-18}
+      rotation: {x: -.00150285626, y: .00893970113, z: -.152726606, w: .98822695}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_finger1End_jt
+      position: {x: -.00144528295, y: 0, z: -2.220446e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_clavicle_bn
+      position: {x: .000765643083, y: -9.57849443e-06, z: -.000738463015}
+      rotation: {x: .0464848503, y: .749669731, z: -.0408572368, w: .658912182}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_shoulder_bn
+      position: {x: .00409591291, y: -5.551115e-19, z: -4.440892e-18}
+      rotation: {x: .0373110324, y: -.0888551772, z: .00079343078, w: .995345175}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_elbow_bn
+      position: {x: .00845365878, y: 6.661338e-18, z: 4.440892e-18}
+      rotation: {x: -.0028997804, y: .0189460814, z: .036216516, w: .999160171}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_wrist_bn
+      position: {x: .00361961243, y: 1.6653345e-18, z: -2.94426701e-12}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_hand_bn
+      position: {x: .00344477501, y: 8.32667219e-18, z: -2.80207845e-12}
+      rotation: {x: 3.9883849e-10, y: -.0801809952, z: 4.95832886e-09, w: .996780336}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_finger0Base_bn
+      position: {x: .00158011296, y: .00277069863, z: .000909080729}
+      rotation: {x: .961382329, y: .0381576903, z: .0254981089, w: .271362811}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_finger0Mid_bn
+      position: {x: .00181229797, y: 2.95040554e-11, z: -2.54122921e-11}
+      rotation: {x: -1.21071917e-08, y: 1.49011598e-07, z: .0272604078, w: .999628365}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_finger0End_jt
+      position: {x: .0013422179, y: 3.8857806e-18, z: -2.220446e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_finger1Base_bn
+      position: {x: .00577829219, y: -1.7539962e-07, z: -.000801183516}
+      rotation: {x: .646428406, y: -.129086033, z: .143563479, w: .73814404}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_finger1Mid_bn
+      position: {x: .00197053049, y: 2.41584652e-11, z: -6.53028326e-12}
+      rotation: {x: -.00150289456, y: .00893933512, z: -.152727216, w: .988226831}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_finger1End_jt
+      position: {x: .00144530414, y: 0, z: -1.3877787e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_pelvis_bn
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.5, y: .5, z: .5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_leg_bn
+      position: {x: .000560727378, y: .00109246478, z: .00321283331}
+      rotation: {x: -.0544165634, y: .00393592007, z: .998033762, w: -.0308535546}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_knee_bn
+      position: {x: -.00839175656, y: -1.110223e-18, z: -3.330669e-18}
+      rotation: {x: 0, y: -0, z: -.0342571437, w: .999413073}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_foot_bn
+      position: {x: -.00716190599, y: 1.6653345e-18, z: 5.55111479e-18}
+      rotation: {x: -.084079057, y: -.0155998049, z: .391431093, w: .916225493}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_toe_bn
+      position: {x: -.00272174273, y: -5.551115e-19, z: 1.110223e-18}
+      rotation: {x: 0, y: 0, z: .313522667, w: .949580729}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_l_tip_jt
+      position: {x: -.00450554583, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_leg_bn
+      position: {x: .000560776971, y: .00109247083, z: -.00321283005}
+      rotation: {x: .00393593358, y: .0544165634, z: .0308534913, w: .998033762}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_knee_bn
+      position: {x: .00839165784, y: -1.110223e-18, z: -3.330669e-18}
+      rotation: {x: 0, y: -0, z: -.0342571437, w: .999413073}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_foot_bn
+      position: {x: .00716195861, y: 1.110223e-18, z: 6.661338e-18}
+      rotation: {x: -.084079057, y: -.0155998049, z: .391431093, w: .916225493}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_toe_bn
+      position: {x: .00272173854, y: 0, z: -1.110223e-18}
+      rotation: {x: 0, y: 0, z: .313522667, w: .949580729}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: scale_r_tip_jt
+      position: {x: .00450555421, y: 2.7755575e-19, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -161,7 +874,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

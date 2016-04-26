@@ -5,7 +5,7 @@ public class StatePatternEnemy : MonoBehaviour
 {
 
 
-
+	[HideInInspector] public float angle2 = 0f;
 
 	public float searchingTurnSpeed = 120f;
 	public float searchingDuration = 4f;
@@ -39,7 +39,7 @@ public class StatePatternEnemy : MonoBehaviour
 	[HideInInspector] public PlayerHealth playerHealth;
 	[HideInInspector] public DeathState deathState;
 
-	[HideInInspector] public Animator playerAnim;
+	public Animator playerAnim;
 
 
 	//public GameObject particle;
@@ -61,6 +61,8 @@ public class StatePatternEnemy : MonoBehaviour
 		enemyAnimator = gameObject.GetComponentInChildren<Animator>();
 		playerHealth = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponent<PlayerHealth>();
 		playerAnim = GameObject.FindGameObjectWithTag("PlayerComponents").GetComponentInChildren<Animator>();
+
+
 	}
 	
 	// Use this for initialization
