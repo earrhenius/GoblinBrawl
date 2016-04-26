@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 7c92f44674bc1d24181f269792f9614d
+timeCreated: 1461653456
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: goblinMesh
+    100004: pSphere1
+    100006: pSphere2
+    100008: scale_chest_bn
+    100010: scale_head_bn
+    100012: scale_head_jt
+    100014: scale_l_clavicle_bn
+    100016: scale_l_elbow_bn
+    100018: scale_l_finger0Base_bn
+    100020: scale_l_finger0End_jt
+    100022: scale_l_finger0Mid_bn
+    100024: scale_l_finger1Base_bn
+    100026: scale_l_finger1End_jt
+    100028: scale_l_finger1Mid_bn
+    100030: scale_l_foot_bn
+    100032: scale_l_hand_bn
+    100034: scale_l_knee_bn
+    100036: scale_l_leg_bn
+    100038: scale_l_shoulder_bn
+    100040: scale_l_tip_jt
+    100042: scale_l_toe_bn
+    100044: scale_l_wrist_bn
+    100046: scale_neck_bn
+    100048: scale_pelvis_bn
+    100050: scale_r_clavicle_bn
+    100052: scale_r_elbow_bn
+    100054: scale_r_finger0Base_bn
+    100056: scale_r_finger0End_jt
+    100058: scale_r_finger0Mid_bn
+    100060: scale_r_finger1Base_bn
+    100062: scale_r_finger1End_jt
+    100064: scale_r_finger1Mid_bn
+    100066: scale_r_foot_bn
+    100068: scale_r_hand_bn
+    100070: scale_r_knee_bn
+    100072: scale_r_leg_bn
+    100074: scale_r_shoulder_bn
+    100076: scale_r_tip_jt
+    100078: scale_r_toe_bn
+    100080: scale_r_wrist_bn
+    100082: scale_root_bn
+    100084: scale_spine1_bn
+    100086: scale_spineEnd_bn
+    400000: //RootNode
+    400002: goblinMesh
+    400004: pSphere1
+    400006: pSphere2
+    400008: scale_chest_bn
+    400010: scale_head_bn
+    400012: scale_head_jt
+    400014: scale_l_clavicle_bn
+    400016: scale_l_elbow_bn
+    400018: scale_l_finger0Base_bn
+    400020: scale_l_finger0End_jt
+    400022: scale_l_finger0Mid_bn
+    400024: scale_l_finger1Base_bn
+    400026: scale_l_finger1End_jt
+    400028: scale_l_finger1Mid_bn
+    400030: scale_l_foot_bn
+    400032: scale_l_hand_bn
+    400034: scale_l_knee_bn
+    400036: scale_l_leg_bn
+    400038: scale_l_shoulder_bn
+    400040: scale_l_tip_jt
+    400042: scale_l_toe_bn
+    400044: scale_l_wrist_bn
+    400046: scale_neck_bn
+    400048: scale_pelvis_bn
+    400050: scale_r_clavicle_bn
+    400052: scale_r_elbow_bn
+    400054: scale_r_finger0Base_bn
+    400056: scale_r_finger0End_jt
+    400058: scale_r_finger0Mid_bn
+    400060: scale_r_finger1Base_bn
+    400062: scale_r_finger1End_jt
+    400064: scale_r_finger1Mid_bn
+    400066: scale_r_foot_bn
+    400068: scale_r_hand_bn
+    400070: scale_r_knee_bn
+    400072: scale_r_leg_bn
+    400074: scale_r_shoulder_bn
+    400076: scale_r_tip_jt
+    400078: scale_r_toe_bn
+    400080: scale_r_wrist_bn
+    400082: scale_root_bn
+    400084: scale_spine1_bn
+    400086: scale_spineEnd_bn
+    2300000: pSphere1
+    2300002: pSphere2
+    3300000: pSphere1
+    3300002: pSphere2
+    4300000: pSphere2
+    4300002: pSphere1
+    4300004: goblinMesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: goblinMesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
